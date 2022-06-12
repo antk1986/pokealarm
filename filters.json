@@ -164,6 +164,11 @@
                 "monsters":[554],
                 "form_ids":["2341"]
             },
+            "filter_shundo_flunschlik":{
+                "min_iv":100,
+                "monsters":[618],
+                "form_ids":["2345"]
+            },
             "filter_pvp_common":{
                 "max_atk":2,
                 "min_def":12,

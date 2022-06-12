@@ -89,7 +89,7 @@
             "alarms":["alarm_telegram_mon_du_jour"]
         },
         "rule_shundo":{
-            "filters":["filter_shundo","filter_shundo_raichu","filter_shundo_sandan","filter_shundo_vulpix","filter_shundo_mauzi","filter_shundo_ponita","filter_shundo_lahmus","filter_shundo_porenta","filter_shundo_sleima","filter_shundo_kokowei","filter_shundo_knogga","filter_shundo_smogmog","filter_shundo_sniebel","filter_shundo_zigzachs","filter_shundo_flampion"],
+            "filters":["filter_shundo","filter_shundo_raichu","filter_shundo_sandan","filter_shundo_vulpix","filter_shundo_mauzi","filter_shundo_ponita","filter_shundo_lahmus","filter_shundo_porenta","filter_shundo_sleima","filter_shundo_kokowei","filter_shundo_knogga","filter_shundo_smogmog","filter_shundo_sniebel","filter_shundo_zigzachs","filter_shundo_flampion","filter_shundo_flunschlik"],
             "alarms":["alarm_telegram_shundo"]
         },
         "rule_pvp":{
