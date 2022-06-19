@@ -85,7 +85,7 @@
             "alarms":["alarm_telegram_rare_spawns"]
         },
         "rule_mon_du_jour":{
-            "filters":["filter_mon_du_jour","filter_mon_du_jour_lvl20"],
+            "filters":["filter_mon_du_jour"],
             "alarms":["alarm_telegram_mon_du_jour"]
         },
         "rule_shundo":{
