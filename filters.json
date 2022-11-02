@@ -77,14 +77,14 @@
                 "monsters":[782,783,784]
             },
             "filter_rare_spawns":{
-                "monsters":[201,481,532,533,534,610,611,612,714,715,782,783,784]
+                "monsters":[201,481,610,611,612,714,715,782,783,784]
             },
             "filter_mon_du_jour_cday":{
                 "min_iv":97,
-                "monsters":[661]
+                "monsters":[147,216]
             },
             "filter_mon_du_jour":{
-                "monsters":[359,531,564,565,566,567,607,608,609,622,623,696,697,698,699]
+                "monsters":[]
             },
             "filter_shundo":{
                 "min_iv":100,
