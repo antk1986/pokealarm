@@ -249,14 +249,14 @@ class TelegramAlarm(Alarm):
             self.send_venue(bot_token, chat_id, lat, lng, message, max_attempts)
             return  # Don't send message or map
 
+        # Send Map
+        if alert.map:
+            self.send_location(bot_token, chat_id, lat, lng, max_attempts)
+
         # Send Message
         self.send_message(
             bot_token, chat_id, replace(message, dts), web_preview=alert.web_preview
         )
-
-        # Send Map
-        if alert.map:
-            self.send_location(bot_token, chat_id, lat, lng, max_attempts)
 
     # Trigger an alert based on Pokemon info
     def pokemon_alert(self, mon_dts):
