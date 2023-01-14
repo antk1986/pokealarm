@@ -44,6 +44,7 @@ class Manager(object):
         cache_type,
         geofence_file,
         debug,
+        gmaps_cache_fuzz,
     ):
         # Set the name of the Manager
         self.name = str(name).lower()
@@ -52,13 +53,16 @@ class Manager(object):
 
         self.__debug = debug
 
+        # Create cache
+        self.__cache = cache_factory(self, cache_type)
+
         # Get the Google Maps AP# TODO: Improve error checking
         self._google_key = None
         self._google_signing_key = None
         self._gmaps_service = None
         if str(google_key).lower() != "none":
             self._google_key = google_key
-            self._gmaps_service = GMaps(google_key)
+            self._gmaps_service = GMaps(google_key, gmaps_cache_fuzz, self.__cache)
             if str(google_signing_key).lower() != "none":
                 self._google_signing_key = google_signing_key
         self._gmaps_reverse_geocode = False
@@ -78,9 +82,6 @@ class Manager(object):
             self._log.warning(
                 "NO LOCATION SET - this may cause issues with distance related DTS."
             )
-
-        # Create cache
-        self.__cache = cache_factory(self, cache_type)
 
         # Load and Setup the Pokemon Filters
         self._mons_enabled, self._mon_filters = False, OrderedDict()

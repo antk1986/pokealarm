@@ -613,6 +613,13 @@ def parse_settings(root_path):
         help="Specify a Google API Key to use.",
     )
     parser.add_argument(
+        "--gmaps-cache-fuzz",
+        type=int,
+        action="append",
+        default=[0],
+        help="Max. fuzz in days to add to caching time.",
+    )
+    parser.add_argument(
         "--gmaps-signing-secret",
         action="append",
         default=[None],
@@ -743,6 +750,7 @@ def parse_settings(root_path):
         args.mgr_log_lvl,
         args.mgr_log_size,
         args.mgr_log_file,
+        args.gmaps_cache_fuzz,
         args.gmaps_signing_secret,
     ]:
         if len(arg) > 1:  # Remove defaults from the list
@@ -785,6 +793,9 @@ def parse_settings(root_path):
         m = Manager(
             name=args.manager_name[m_ct],
             google_key=get_from_list(args.gmaps_key, m_ct, args.gmaps_key[0]),
+            gmaps_cache_fuzz=get_from_list(
+                args.gmaps_cache_fuzz, m_ct, args.gmaps_cache_fuzz[0]
+            ),
             google_signing_key=get_from_list(
                 args.gmaps_signing_secret, m_ct, args.gmaps_signing_secret[0]
             ),
