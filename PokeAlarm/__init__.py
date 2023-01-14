@@ -38,4 +38,4 @@ class Unknown:
     @classmethod
     def or_empty(cls, val, default=EMPTY):
         """Returns an default if unknown, else the original value."""
-        return val if val not in cls.__unknown_set else default
+        return f" {val}" if val not in cls.__unknown_set else default
