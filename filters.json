@@ -55,36 +55,46 @@
                 "max_iv":0
             },
             "filter_x-eira":{
+                "min_iv":97,
                 "monsters":[440,113,242]
             },
             "filter_ef_em":{
+                "min_iv":97,
                 "monsters":[714,715]
             },
             "filter_kaumalat":{
+                "min_iv":97,
                 "monsters":[443,444,445]
             },
             "filter_milza":{
+                "min_iv":97,
                 "monsters":[610,611,612]
             },
             "filter_flapteryx":{
+                "min_iv":97,
                 "monsters":[566,567]
             },
             "filter_kapuno":{
+                "min_iv":97,
                 "monsters":[633,634,635]
             },
             "filter_relaxo":{
+                "min_iv":97,
                 "monsters":[446,143]
             },
             "filter_icognito":{
                 "monsters":[201]
             },
             "filter_vesprit":{
+                "min_iv":97,
                 "monsters":[481]
             },
             "filter_togetic":{
+                "min_iv":97,
                 "monsters":[175,176,468]
             },
             "filter_miniras":{
+                "min_iv":97,
                 "monsters":[782,783,784]
             },
             "filter_shundo":{
